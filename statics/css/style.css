@@ -1,70 +1,36 @@
-/* #777777 */
-.shadow{
-    color:transparent;
+.shadow {
+    color: transparent;
     text-shadow: 0 1px 2px #777777;
 }
-.flicker{
-    color:#777777;
-        -webkit-animation:flicker 2s ;
+
+.flicker {
+    color: #777777;
+    -webkit-animation: flicker 2s;
 }
-@-webkit-keyframes flicker{
-    0%{
+
+@-webkit-keyframes flicker {
+    0% {
         opacity: 0;
     }
-    50%{
+
+    50% {
         opacity: 0.5;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-.text-muted {
+
+.text-default {
     color: #fff;
-  }
-.index-title{
-    padding-top: 2cm;
-}
-a{
-    text-decoration: none;
-}
-main{
-    display: table;
-    margin: 0 auto;
-}
-.main-container{
-    display:table;
-}
-.main-content{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-    display: table-cell;    
-    vertical-align: middle;
-}
-.links{
-    max-width: 300px;
-}
-.links a{
-    color: #777777;
-    display: block;
-    min-width: 80px;
-    padding: 1em 2em;
-    text-align: center;
-    margin-bottom: 1em;
-    border: #777777 1px solid;
-    border-radius: 100px;
-    transition: background 0.5s,color 0.5s,opacity 0.5s,transform 0.5s;
 }
 
-.links a:hover{
-    color: #777777;
-    background: none;
-    transform: scale(1.1,1.1);
+a {
+    target: _self;
+    text-decoration: none;
 }
-.links a:active{
-    opacity: 0.7;
-    transform: scale(0.9,0.9);
-}
-.links a:last-child{
-    margin-bottom: 0;
+
+.links {
+    max-width: 300px;
 }

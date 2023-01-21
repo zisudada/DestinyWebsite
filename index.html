@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Destiny</title>
-	<link rel="stylesheet" href="./statics/css/style.css">
-	<link rel="stylesheet" href="./statics/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./statics/plugins/bootstrap/js/bootstrap.min.js">
+    <meta charset="utf-8">
+    <title>Destiny</title>
+    <link rel="stylesheet" href="./statics/css/style.css">
+    <link rel="stylesheet" href="./statics/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./statics/plugins/bootstrap/js/bootstrap.min.js">
+    <style type="   text/css">
+        .index-title {
+            padding-top: 2cm;
+        }
+
+        main {
+            display: table;
+            margin: 0 auto;
+        }
+
+        .main-container {
+            display: table;
+        }
+
+        .main-content {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .links a {
+            color: #777777;
+            display: block;
+            min-width: 80px;
+            padding: 1em 2em;
+            text-align: center;
+            margin-bottom: 1em;
+            border: #777777 1px solid;
+            border-radius: 100px;
+            transition: background 0.5s, color 0.5s, opacity 0.5s, transform 0.5s;
+        }
+
+        .links a:hover {
+            color: #777777;
+            background: none;
+            transform: scale(1.1, 1.1);
+        }
+
+        .links a:active {
+            opacity: 0.7;
+            transform: scale(0.9, 0.9);
+        }
+
+        .links a:last-child {
+            margin-bottom: 0;
+        }
+    </style>
 </head>
-<body background="./statics/img/index_bg.png"
-	  style="background-repeat:no-repeat;background-attachment:fixed;background-size:100% 100%;">
-<div class="container">
-	<div class="nav flex-column justify-content-center text-center text-muted">
-		<h1 class="index-title">Destiny</h1>
-		<h3>Achieve eternity in yourself</h3>
-	</div>
-</div>
-<main class="main-container">
-	<div class="main-content">
-		<div class="links">
-			<a href="#" target="_blank" >Download</a>
-			<a href="#" target="_blank" >About</a>
-		</div>
-	</div>
-</main>
+
+<body background="./statics/img/index_bg.png" class="flicker"
+    style="background-repeat:no-repeat;background-attachment:fixed;background-size:100% 100%;">
+    <div class="container">
+        <div class="nav flex-column justify-content-center text-center  text-muted">
+            <h1 class="index-title">Destiny</h1>
+            <h3>Achieve eternity in yourself</h3>
+        </div>
+    </div>
+    <main class="main-container">
+        <div class="main-content">
+            <div class="links">
+                <a href="#">Download</a>
+                <a href="./templates/about.html">About</a>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
