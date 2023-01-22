@@ -2,13 +2,36 @@
 
 <head>
     <link rel="stylesheet" href="../statics/plugins/bootstrap/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="../statics/plugins/bootstrap/js/bootstrap.min.js"> -->
+    <link rel="stylesheet" href="../statics/css/style.css">
+    <style type="text/css">
+        .about-bg {
+            color: #ffffff;
+            -webkit-animation: about-licker 2s;
+        }
+
+        @-webkit-keyframes about-flicker {
+            0% {
+                opacity: 1.0;
+            }
+
+            100% {
+                opacity: 0.0;
+            }
+        }
+    </style>
 </head>
 
-<body background="../statics/img/index_bg.png">
-    <div class="text-center">
-        <h1>About me</h1>
+<body background="../statics/img/index_bg.png" class="flicker"
+    style="background-repeat:no-repeat;background-attachment:fixed;background-size:100% 100%;">
+    <div style="background-color: #ffffff;">
+        <div class="text-center" style="padding: 5%;">
+            <h1>About me</h1>
+            <div>
+                <h3>No something about me</h3>
+            </div>
+        </div>
     </div>
+    
     <div>
     </div>
 </body>
