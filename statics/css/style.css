@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .shadow {
     color: transparent;
     text-shadow: 0 1px 2px #777777;
@@ -5,15 +11,15 @@
 
 .flicker {
     color: #777777;
-    -webkit-animation: flicker 2s;
+    animation: flicker 2s;
 }
 
-@-webkit-keyframes flicker {
+@keyframes flicker {
     0% {
         opacity: 0;
     }
 
-    
+
 
     100% {
         opacity: 1;
@@ -29,7 +35,33 @@ a {
     display: inline-block;
     letter-spacing: 2px;
     text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+}
 
+a:hover {
+    color: #777777;
+    text-decoration: underline;
+}
+
+
+
+.ripple-1::before {
+    content: '';
+    position: absolute;
+    left: var(--xPos);
+    right: var(--yPos);
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    background-color: #7777775e;
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+
+.ripple-1:hover::before {
+    width: 400px;
+    height: 400px;
 }
 
 .links {
