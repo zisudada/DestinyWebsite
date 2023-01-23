@@ -13,9 +13,7 @@
         opacity: 0;
     }
 
-    50% {
-        opacity: 0.5;
-    }
+    
 
     100% {
         opacity: 1;
@@ -28,7 +26,10 @@
 
 a {
     target: _self;
+    display: inline-block;
+    letter-spacing: 2px;
     text-decoration: none;
+
 }
 
 .links {
@@ -66,7 +67,6 @@ main {
 
 .links a:hover {
     color: #777777;
-    background: none;
     transform: scale(1.1, 1.1);
 }
 
