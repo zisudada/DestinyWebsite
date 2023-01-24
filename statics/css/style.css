@@ -19,8 +19,6 @@
         opacity: 0;
     }
 
-
-
     100% {
         opacity: 1;
     }
@@ -64,10 +62,6 @@ a:hover {
     height: 400px;
 }
 
-.links {
-    max-width: 300px;
-}
-
 main {
     display: table;
     margin: 0 auto;
@@ -83,6 +77,10 @@ main {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+}
+
+.links {
+    max-width: 300px;
 }
 
 .links a {
